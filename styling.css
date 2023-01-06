@@ -28,3 +28,12 @@ body{
     max-width: 100%;
     object-fit: cover;
 }
+
+@media screen and (orientation: portrait) {
+    #videoContainer :nth-child(1) { display: none; }
+    #videoContianer :nth-child(2) { display: flex; }
+}
+@media screen and (orientation: landscape) {
+    #videoContainer :nth-child(1) { display: flex; }
+    #videoContianer :nth-child(2) { display: none; }
+}
