@@ -71,5 +71,26 @@ body{
     width: 100%;
     height: 105vh;
     background-color: white;
-    opacity: 0.65;
+    opacity: 0.55;
+}
+
+.navBar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    margin-left: 3vw;
+}
+
+.navBar li {
+    color: white;
+    font-family: monospace;
+    font-weight: lighter;
+    list-style: none;
+    padding: 5px 0;
+    opacity: 0.35;
+}
+
+#active {
+    opacity: 0.75;
 }
