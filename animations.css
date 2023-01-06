@@ -2,11 +2,13 @@
     #videoContainer :nth-child(1) { display: none; }
     #videoContianer :nth-child(2) { display: flex; }
     #heroText { width: 15vh;}
+    .scrollDirectionIndicator {margin-right: 3vh;}
 }
 @media screen and (orientation: landscape) {
     #videoContainer :nth-child(1) { display: flex; }
     #videoContianer :nth-child(2) { display: none; }
     #heroText {width: 15vw;}
+    .scrollDirectionIndicator {margin-right: 3vw;}
 }
 
 #heroText {
@@ -73,5 +75,31 @@
     }
     to {
         fill: white;
+    }
+}
+
+.indicator {
+    animation: scroll;
+    animation-delay: 5s;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateY(105%);
+        transform:translateY(105%);
+    }
+
+    70% {
+        -webkit-transform: translateY(-105%);
+        transform:translateY(-105%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-105%);
+        transform:translateY(-105%);   
     }
 }
