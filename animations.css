@@ -2,13 +2,21 @@
     #videoContainer :nth-child(1) { display: none; }
     #videoContianer :nth-child(2) { display: flex; }
     #heroText { width: 15vh;}
-    .scrollDirectionIndicator {margin-right: 3vh;}
+    .scrollDirectionIndicator {
+        margin-right: 3vh;
+        width: 0.3vh;
+        border-radius: 0.3vh;
+    }
 }
 @media screen and (orientation: landscape) {
     #videoContainer :nth-child(1) { display: flex; }
     #videoContianer :nth-child(2) { display: none; }
     #heroText {width: 15vw;}
-    .scrollDirectionIndicator {margin-right: 3vw;}
+    .scrollDirectionIndicator {
+        margin-right: 3vw;
+        width: 0.2vw;
+        border-radius: 0.2vw;
+    }
 }
 
 #heroText {
@@ -80,8 +88,8 @@
 
 .indicator {
     animation: scroll;
-    animation-delay: 5s;
-    animation-duration: 1.3s;
+    animation-delay: 4.6s;
+    animation-duration: 1.7s;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
