@@ -1,0 +1,77 @@
+@media screen and (orientation: portrait) {
+    #videoContainer :nth-child(1) { display: none; }
+    #videoContianer :nth-child(2) { display: flex; }
+    #heroText { width: 15vh;}
+}
+@media screen and (orientation: landscape) {
+    #videoContainer :nth-child(1) { display: flex; }
+    #videoContianer :nth-child(2) { display: none; }
+    #heroText {width: 15vw;}
+}
+
+#heroText {
+    animation: fillText 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 4s;
+}
+
+#heroText :nth-child(1) {
+    stroke-dasharray: 248.8px;
+    stroke-dashoffset: 248.8px;
+    animation: heroTextAnimation 2s ease forwards;
+}
+
+#heroText :nth-child(2) {
+    stroke-dasharray: 303.8px;
+    stroke-dashoffset: 303.8px;
+    animation: heroTextAnimation 2s ease forwards 0.3s;
+}
+
+#heroText :nth-child(3) {
+    stroke-dasharray: 327.2px;
+    stroke-dashoffset: 327.2px;
+    animation: heroTextAnimation 2s ease forwards 0.6s;
+}
+
+#heroText :nth-child(4) {
+    stroke-dasharray: 448.7px;
+    stroke-dashoffset: 448.7px;
+    animation: heroTextAnimation 2s ease forwards 0.9s;
+}
+
+#heroText :nth-child(5) {
+    stroke-dasharray: 273.4px;
+    stroke-dashoffset: 273.4px;
+    animation: heroTextAnimation 2s ease forwards 1.2s;
+}
+
+#heroText :nth-child(6) {
+    stroke-dasharray: 179.6px;
+    stroke-dashoffset: 179.6px;
+    animation: heroTextAnimation 2s ease forwards 1.5s;
+}
+
+#heroText :nth-child(7) {
+    stroke-dasharray: 275.5px;
+    stroke-dashoffset: 275.5px;
+    animation: heroTextAnimation 2s ease forwards 1.8s;
+}
+
+#heroText :nth-child(8) {
+    stroke-dasharray: 199.7px;
+    stroke-dashoffset: 199.7px;
+    animation: heroTextAnimation 2s ease forwards 2.1s;
+}
+
+@keyframes heroTextAnimation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillText {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
