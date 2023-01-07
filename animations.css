@@ -9,11 +9,10 @@
         border-radius: 0.3vh;
     }
 
-    .navBar{
+    #navBar{
         position: absolute;
         top: 100%;
         transform: translateY(calc(-100% - 1.5vh));
-        font-size: 1.3vh;
     }
 }
 
@@ -26,10 +25,6 @@
         margin-right: 3vw;
         width: 0.2vw;
         border-radius: 0.2vw;
-    }
-
-    .navBar {
-        font-size: 0.9vw;
     }
 }
 
@@ -126,12 +121,37 @@
     }
 }
 
-.navBar li {
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+#navBar > div:nth-child(4) > div:first-child {
+    animation: slideIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2s;
 }
 
-.navBar :hover {
+#navBar > div:nth-child(3) > div:first-child {
+    animation: slideIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2.25s;
+}
+
+#navBar > div:nth-child(2) > div:first-child {
+    animation: slideIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2.45s;
+}
+
+#navBar > div:nth-child(1) > div:first-child {
+    animation: slideIn 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2.6s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(105%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#navBar > div > div {
+    transition: opacity cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+}
+
+#navBar > div > div:hover{
     cursor: pointer;
-    opacity: 0.65;
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+    opacity: 0.7;
+    transition: opacity cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.75s;
 }
