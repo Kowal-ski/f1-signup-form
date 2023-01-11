@@ -121,14 +121,6 @@
     }
 }
 
-#navBar > div:nth-child(4) > div:first-child {
-    animation: slideIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2s;
-}
-
-#navBar > div:nth-child(3) > div:first-child {
-    animation: slideIn 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2.25s;
-}
-
 #navBar > div:nth-child(2) > div:first-child {
     animation: slideIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2.45s;
 }
@@ -154,4 +146,8 @@
     cursor: pointer;
     opacity: 0.7;
     transition: opacity cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.75s;
+}
+
+.scene2.showing {
+    animation: slideIn 0.4s cubic-bezier(0.95, 0.05, 0.795, 0.035) forwards;
 }

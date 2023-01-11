@@ -10,6 +10,33 @@ body{
     background-color: black;
 }
 
+#track {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+#track > div {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    scroll-snap-align: start;
+}
+
+#track::-webkit-scrollbar { 
+    display: none; 
+}
+
+.scenes {
+    background-color: lightslategray;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
 #videoContainer {
     width: 100vw;
     height: 100vh;
@@ -109,4 +136,20 @@ body{
     bottom: 0;
     left: 0;
     transform: translateY(105%);
+}
+
+
+
+.scene2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 105%);
+    will-change: translateY;
 }
