@@ -20,7 +20,6 @@ body {
     justify-content: center;
     overflow: hidden;
     background-image: url(./Images/rachael-ren-U94eGGi_1ZY-unsplash.jpg);
-    transform: scale(0.95);
     background-position: center;
     background-size: cover;
 }

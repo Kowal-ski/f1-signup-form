@@ -28,6 +28,16 @@
     }
 }
 
+@keyframes zoom-out {
+    to {
+        transform: scale(0.95);
+    }
+}
+
+body {
+    animation: zoom-out 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.5s;
+}
+
 .scene1 {
     transition: transform 0.35s ease;
 }
