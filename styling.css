@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-image: url(./Images/rachael-ren-U94eGGi_1ZY-unsplash.jpg);
+    background-image: url(./Images/jacinto-diego-2bTrgpjOu9U-unsplash.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -30,10 +30,12 @@ body {
     position: relative;
     background-color: black;
     z-index: 2;
+    overflow: hidden;
+    border-radius: 5px;
 
-    -webkit-box-shadow: 0px 0px 238px -67px rgba(13, 13, 13, 0.57);
-    -moz-box-shadow: 0px 0px 238px -67px rgba(13, 13, 13, 0.57);
-    box-shadow: 0px 0px 238px -67px rgba(13, 13, 13, 0.57);
+    -webkit-box-shadow: 0px 0px 238px -67px rgba(13, 13, 13, 1);
+    -moz-box-shadow: 0px 0px 238px -67px rgba(13, 13, 13, 1);
+    box-shadow: 0px 0px 238px -67px rgba(13, 13, 13, 1);
 }
 
 .scene2 {
@@ -66,6 +68,7 @@ body {
     min-height: 100%;
     max-width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .videoFilter {
