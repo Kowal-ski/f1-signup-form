@@ -1,6 +1,6 @@
 @font-face {
     font-family: Futura;
-    src: url(./Fonts/futura/futur.ttf);
+    src: url(./Fonts/futura/futura\ medium\ bt.ttf);
 }
 
 *,
@@ -154,8 +154,8 @@ body {
 }
 
 .form-container {
-    height: 75vh;
-    max-height: 650px;
+    height: min(75vh, 650px);
+    width: max(50vh, 40vw);
     max-width: 425px;
     
     position: absolute;
@@ -173,21 +173,25 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .form-container > form {
-    height: 85%;
+    height: fit-content;
     width: 85%;
+    margin: 10px;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    overflow-y: scroll;
 }
 
 .form-container > form > input {
-    height: 10%;
-    margin: 0 10% 10% 10%;
+    flex-basis: clamp(1px, 40px, 50px);
+    margin: 0 10% clamp(1px, 10%, 150px) 10%;
 
     background-color: transparent;
     border: none;
@@ -195,11 +199,13 @@ body {
     opacity: 0.3;
 
     padding-left: 5px;
+    padding-bottom: max(7px, 3%);
     font-family: Futura;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
-.form-container > form > input:nth-child(1) {
-    margin-top: 15%;
+.form-container > form > input:nth-child(4) {
+    margin-bottom: 0;
 }
 
 .form-container > form > input::placeholder {
@@ -216,8 +222,7 @@ body {
     height: 10%;
     min-height: 35px;
     width: 45%;
-
-    margin-bottom: 15%;
+    margin-bottom: 10px;
 
     background-color: #000;
     color: #eeeeee;
@@ -225,6 +230,6 @@ body {
     border-radius: 7px;
 
     font-family: monospace;
-    font-size: 13px;
+    font-size: clamp(0.7rem, 2vw, 1rem);;
     letter-spacing: -0.5px;
 }

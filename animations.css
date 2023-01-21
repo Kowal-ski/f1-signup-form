@@ -14,10 +14,6 @@
         top: 100%;
         transform: translateY(calc(-100% - 1.5vh));
     }
-
-    .form-container { width: 40vh; }
-    .form-container > form > input { font-size: xx-small; }
-    .form-container > button { font-size: smaller; }
 }
 
 @media screen and (orientation: landscape) {
@@ -30,9 +26,6 @@
         width: 0.2vw;
         border-radius: 0.2vw;
     }
-
-    .form-container {width: 40vw;}
-    .form-container > form > input {font-size: 1.45vh;}
 }
 
 @keyframes zoom-out {
